@@ -11,8 +11,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Arvelmay/CompSciCode.git",
+    "accountId": "82df15d8-3fdd-4c6d-8e57-dbc7bc94cad3"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 3
 }]]></component>
@@ -66,7 +72,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1729781085768</updated>
-      <workItem from="1729781086826" duration="1601000" />
+      <workItem from="1729781086826" duration="1906000" />
     </task>
     <task id="LOCAL-00001" summary="oooooo projected">
       <option name="closed" value="true" />
