@@ -8,7 +8,7 @@ public class numGuesser {
         String playAgain;
         do {
             int secretNum = randyboi.nextInt(100);
-            System.out.println("The secret number is: " + secretNum);
+            //System.out.println("The secret number is: " + secretNum);
             int guess;
             int guesses = 0;
             int max = 100;
