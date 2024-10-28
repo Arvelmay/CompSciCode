@@ -35,5 +35,6 @@ public class numGuesser {
             playAgain = scannyboi.nextLine();
         } while(!playAgain.equals("n"));
         System.out.println("Shutting down.");
+        scannyboi.close();
     }
 }
