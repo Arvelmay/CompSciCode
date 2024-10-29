@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class numGuesser {
+public class NumGuesser {
     public static void main(String[] args)
     {
         Scanner scannyboi = new Scanner(System.in);

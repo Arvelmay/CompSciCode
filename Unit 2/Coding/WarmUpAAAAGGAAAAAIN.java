@@ -12,6 +12,6 @@ public class WarmUpAAAAGGAAAAAIN {
         String spaceFront = "";
         String stars = "";
         String spaceback = "";
-        
+        System.out.println(spaceFront+stars+spaceback);
     }
 }
