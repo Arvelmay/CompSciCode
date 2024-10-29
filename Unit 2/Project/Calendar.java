@@ -9,7 +9,7 @@ public class Calendar {
         do{
         System.out.println("What day does the month start on (1-sunday, 2-monday... )?");
         startday = scannyboi.nextInt()-1;
-        }while(startday < 1 || startday > 7);
+        }while(startday < 0 || startday > 6);
         int days;
         do{
         System.out.println("How many days are in the month (28-31)?");
@@ -26,9 +26,9 @@ public class Calendar {
             System.out.print(i+"\t");
         }
         System.out.println();
-        for (int i = startday+2; i <= days; i++){
+        for (int i = 8-startday; i <= days; i++){
             System.out.print(i+"\t");
-            if(i+startday%7 == 0){
+            if((i+startday)%7 == 0){
                 System.out.println();
             }
         }
