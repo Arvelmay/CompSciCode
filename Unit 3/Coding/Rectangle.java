@@ -40,12 +40,16 @@ public class Rectangle{
 	
 	//TODO: Finish getWidth() and setWidth()
 	//visibility returnType getWidth()
-	
+	public double getWidth(){
+		return this.width;
+	}
 	
 	
 	
 	//visibility returnType setWidth()
-	
+	public void setWidth(double newWid){
+		this.width = newWid;
+	}
 	
 	
 	
@@ -54,7 +58,9 @@ public class Rectangle{
 	}
 	//TODO: Finish perimeter method
 	//visibility returnType perimter()
-	
+	public double perimter(){
+		return 2*length+2*width;
+	}
 		
 	
 	public boolean isSquare(){
