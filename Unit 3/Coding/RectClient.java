@@ -5,5 +5,7 @@ public class RectClient
         Rectangle waitAMinuteThatsNotActuallyARectangleIThinkThatIsActuallyASquare = new Rectangle(4,4);
         Rectangle whatWhyIsThereNoParamsINeedParamsWHEREARETHEPARAMS = new Rectangle();
         System.out.println(whatWhyIsThereNoParamsINeedParamsWHEREARETHEPARAMS.diagonal());
+        System.out.println(recty.area());
+        System.out.println(waitAMinuteThatsNotActuallyARectangleIThinkThatIsActuallyASquare.getLength());
     }
 }

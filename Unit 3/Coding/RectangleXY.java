@@ -78,6 +78,7 @@ public class RectangleXY
     //TODO: Write public boolean contains(int x2, int y2)
     
     public boolean contains(int x2, int y2){
+        //checks if x2 is less than x1+length, or the far right of r1, and does similar for the y, and returns true if x2 and y2 are in bounds
         if (x2 >= x1 && x2<=x1+width && y2 >= y1 && y2 <= y1+length){
             return true;
         }
@@ -88,6 +89,21 @@ public class RectangleXY
 
     //TODO: Write public boolean intersects(RectangleXY r2)
     
+    public boolean intersects(RectangleXY r2){
+        int x2 = r2.getX1();
+        //r2's horizontal size
+        double width2 = r2.getWidth();
+        int y2 = r2.getY1();
+        //r2's length, verticle size
+        double length2 = r2.getLength();
+        if (x2+width2 <= x1+width && x2+width2 >= x1 && y2+length2<=y1+length && y2+length2 >= y1){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
     //TODO: Write public boolean surrounds(RectangleXY r2)
         
     public void draw(){
@@ -103,10 +119,13 @@ public class RectangleXY
     public static void main(String[] args){
         
         RectangleXY r1 = new RectangleXY(300,700, 100, 100);
+        RectangleXY r2 = new RectangleXY(400,500,200,300);
         
         r1.draw();
+        r2.draw();
         
         System.out.println(r1.contains(101,99));
-        
+        System.out.println(r1.intersects(r2));
+
         }
 }
