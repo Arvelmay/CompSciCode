@@ -27,17 +27,14 @@ public class Cat
         this.name = nm;
         this.weight = wt;
     }
-    
+
+    public Cat(String col, int ag, double wt){
+        this(col, ag, "unknown", wt);
+    }
+
     public void meow(){
-        System.out.println(this.name+": 'MEOW'");}
+        System.out.println(this.name+": 'MEOW'");
+        System.out.println(color+age+weight);
+    }
     
 }
-
-
-
-
-
-
-
-
-
