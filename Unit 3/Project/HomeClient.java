@@ -35,7 +35,8 @@ public class HomeClient
                 case 1: System.out.println(userHome+"\n"+squareFt);
                     break;
                 case 2: System.out.println("What would you like to change the square footage to? ");
-                    userHome.updateSF(scannyboi.nextInt());
+                    int newSF = scannyboi.nextInt();
+                    userHome.updateSF(newSF);
                     scannyboi.nextLine();
                     break;
                 case 3: System.out.println("How many years in advance do you want to check? ");

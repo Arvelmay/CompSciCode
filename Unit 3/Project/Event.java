@@ -73,7 +73,20 @@ public class Event {
 
     //runs when you print the name of the class
     public String toString(){
-        return (this.description+"\n"+this.day+" "+this.month+", "+this.year);
-        System.out.println(this.startTime+" - "+this.endTime);
+        return (this.description+"\n"+this.day+" "+this.month+", "+this.year+"\n"+this.startTime+" - "+this.endTime);
+    }
+
+    public boolean conflict(Event e1){
+        if (this.month.equals(e1.month) && this.day == e1.day && this.year == e1.year){
+            if (this.startTime >= e1.startTime && this.startTime <= e1.endTime || this.endTime <= e1.endTime && this.endTime >= e1.startTime){
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+        else {
+            return false;
+        }
     }
 }
