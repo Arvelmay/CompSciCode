@@ -17,6 +17,15 @@ public class Bowler
         this.average = ((double) x+y+z)/3;
         count++;
     }
+
+    //Default Constructor with a user defined name
+    public Bowler(String n){
+        this.name = n;
+        this.g1 = 0;
+        this.g2 = 0;
+        this.g3 = 0;
+        this.average = 0;
+    }
    
     // accessor methods
    
