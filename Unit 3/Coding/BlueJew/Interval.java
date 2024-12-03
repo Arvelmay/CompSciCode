@@ -34,9 +34,13 @@ public class Interval {
     public boolean intersects(Interval i1){
         return(this.min<=i1.min && this.max >= i1.min || this.max<=i1.max && this.min >= i1.max);
     }
-    
+
     public boolean contains(Interval i1){
         return (this.min <= i1.min && this.max >= i1.max);
+    }
+    
+    public boolean contains(double point){
+        return (this.min <= point && this.max >= point);
     }
 
     public double length(){
