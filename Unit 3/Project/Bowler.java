@@ -105,7 +105,4 @@ public class Bowler
         String str = name + "\t" + average + "\n" + g1 + "\n" + g2 + "\n" + g3;
         return str;
     }
-   
-   
-   
 }
