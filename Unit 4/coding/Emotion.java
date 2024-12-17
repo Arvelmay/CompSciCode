@@ -34,19 +34,19 @@ public class Emotion
     public String toString(){
         String face = "";
         switch(this.getHappiness()){
-            case 1: face = "😡";
+            case 1: face = "😡 >:(";
                     break;
-            case 2: face = "😟";
+            case 2: face = "😟  :(";
                     break;
-            case 3: face = "😞";
+            case 3: face = "😞  <(";
                     break;
-            case 4: face = "😐";
+            case 4: face = "😐  :|";
                     break;
-            case 5: face = "🙂";
+            case 5: face = "🙂  :)";
                     break;
-            case 6: face = "😄";
+            case 6: face = "😄  :D";
                     break;
-            case 7: face = "😆";
+            case 7: face = "😆  XD";
                     break;}
         return face;}}
     

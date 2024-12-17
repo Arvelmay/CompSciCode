@@ -33,16 +33,17 @@ public class APScores
         writer.close();
     }
     public static int[] readFromFile(String filepath) throws IOException{
-        Scanner reader = new Scanner(new File(filepath));
-        reader.useDelimiter(", ");
+        Scanner scannyboi = new Scanner(new File(filepath));
+        scannyboi.useDelimiter(", ");
         String cap = filepath.replace("scores.txt","");
         int size = Integer.parseInt(cap);
         int [] scores = new int[size];
         for (int i = 0; i<size; i++){
         
-            scores[i] = Integer.parseInt(reader.next());
+            scores[i] = Integer.parseInt(scannyboi.next());
         
         }
+        scannyboi.close();
         return scores;
         }
     public static void main(String[] args) throws IOException{
