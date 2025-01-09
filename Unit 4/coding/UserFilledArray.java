@@ -31,7 +31,7 @@ public class UserFilledArray {
         System.out.println("Logical Size is "+logicalSize);
         for (Emotion emo: emos){
             if(emo != null){
-
+                
             }
         }
     }
