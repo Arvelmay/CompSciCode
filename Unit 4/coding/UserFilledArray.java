@@ -2,6 +2,16 @@
 import java.util.*;
 
 public class UserFilledArray {
+    public static int getTotalHappiness(Emotion[] arr){
+        int totalHappiness=0;
+        for (int i = 0; i<arr.length; i++){
+            if (arr[i] != null){
+                totalHappiness += arr[i].getHappiness();
+            }
+        }
+        return totalHappiness;
+    }
+
     public static void main(String[] args) {
         Scanner scannyboi = new Scanner(System.in);
         Emotion[] emos = new Emotion[10];
@@ -19,5 +29,10 @@ public class UserFilledArray {
             System.out.println(Arrays.toString(emos));
         }
         System.out.println("Logical Size is "+logicalSize);
+        for (Emotion emo: emos){
+            if(emo != null){
+
+            }
+        }
     }
 }
