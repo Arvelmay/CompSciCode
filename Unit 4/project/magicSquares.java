@@ -1,6 +1,4 @@
-import java.util.Arrays;
-
-public class magicSquares {
+public class MagicSquares {
     public static boolean isMagic(int[][] squar){
 
         for (int r = 0; r < squar.length; r++){
