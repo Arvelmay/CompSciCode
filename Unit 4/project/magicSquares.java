@@ -56,17 +56,4 @@ public class MagicSquares {
 
         return true;
     }
-
-
-    public static void main(String[] args) {
-        int[][] ints1 = {{3}};
-        int[][] ints2 = {{2,7,6},{9,5,1},{4,3,8}};
-        int[][] ints3 = {{2,4},{3,1}};
-        int[][] ints4 = {{5,8,3},{7,4,9}};
-
-        System.out.println(isMagic(ints1));
-        System.out.println(isMagic(ints2));
-        System.out.println(isMagic(ints3));
-        System.out.println(isMagic(ints4));
-    }
 }
