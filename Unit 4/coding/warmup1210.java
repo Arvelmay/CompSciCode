@@ -24,5 +24,6 @@ public class warmup1210 {
         //problem 3
         int goofyArrayWithTheBracketsBehindAndAReallyLongNameAndMinorSpelingMistakesToMessWithMR_Troy [] = new int[7];
         System.out.println(goofyArrayWithTheBracketsBehindAndAReallyLongNameAndMinorSpelingMistakesToMessWithMR_Troy[0]);
+        scannyboi.close();
     }
 }

@@ -1,25 +1,18 @@
 public class Card {
     private String suit;
-    private String value;
+    private int value;
     private boolean isRed;
 
-    public Card(String v){
+    public Card(int v){
         this.value = v;
     }
 
-    public String getSuit(){
-        return this.suit;
-    }
-
-    public String getValue(){
-        return this.value;
-    }
-
+    //Setter methods
     public void setSuit(String s){
         this.suit = s;
     }
 
-    public void setValue(String v){
+    public void setValue(int v){
         this.value = v;
     }
 
@@ -27,6 +20,20 @@ public class Card {
         this.isRed = b;
     }
 
+    //Getter methods
+    public String getSuit(){
+        return this.suit;
+    }
+
+    public int getValue(){
+        return this.value;
+    }
+
+    public boolean getRed(){
+        return this.isRed;
+    }
+
+    @Override
     public String toString(){
         return this.value + this.suit;
     }
