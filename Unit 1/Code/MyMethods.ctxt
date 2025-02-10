@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=MyMethods
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ MyMethods\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=original
+comment1.target=int\ addTen(int)
+comment2.params=original
+comment2.target=int\ multByTwo(int)
+comment3.params=
+comment3.target=void\ goofy()
+comment4.params=realName
+comment4.target=java.lang.String\ rapName(java.lang.String)
+comment5.params=args
+comment5.target=void\ main(java.lang.String[])
+numComments=6
