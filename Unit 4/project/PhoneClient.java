@@ -52,5 +52,6 @@ public class PhoneClient{
             }
         } while (keepGoing);
         System.out.println(Arrays.toString(numList));
+    scannyboi.close();
     }
 }
