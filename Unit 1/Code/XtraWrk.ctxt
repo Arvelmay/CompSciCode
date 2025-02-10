@@ -1,8 +1,0 @@
-#BlueJ class context
-comment0.target=XtraWrk
-comment0.text=\r\n\ \ \ \ Write\ a\ static\ method\ that\ takes\r\n\ \ \ \ an\ int\ number\ of\ seconds\r\n\ \ \ \ and\ prints\ how\ many\ minutes\ and\ seconds\ that\ is\r\n\ \ \ \ \r\n\ \ \ \ e.g.\ ExtraWork.convertSexs(100)\r\n\ \ \ \ 100\ seconsd\ is\ 1\ minute\ and\ 40\ seconds\r\n
-comment1.params=secs
-comment1.target=void\ convertSecs(int)
-comment2.params=args
-comment2.target=void\ main(java.lang.String[])
-numComments=3
