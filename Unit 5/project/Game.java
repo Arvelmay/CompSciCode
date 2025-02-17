@@ -18,12 +18,12 @@ public class Game {
             do{
                 spot[0] = randyboi.nextInt(9);
                 spot[1] = randyboi.nextInt(9);
-            }while(grid[spot[0]][spot[1]] != null);
+            }while(grid[spot[0]][spot[1]] != null && spot[1] != 9 && !(spot[0] == 0 && spot[1] == 9));
 
             randomSpots[i] = randyboi.nextInt(4);
 
             switch(randomSpots[i]){
-                case 0: grid[spot[0]][spot[1]] = new Cell("CT");
+                case 0: grid[spot[0]][spot[1]] = new CaveTroll();
                 break;
                 case 1: grid[spot[0]][spot[1]] = new Cell("GO");
                 break;

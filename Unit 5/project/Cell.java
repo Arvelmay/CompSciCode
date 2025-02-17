@@ -3,10 +3,11 @@ import java.util.Random;
 public class Cell {
     private int hp; //health points
     private int ap; //Attack points
-    private int am; //armor points
-    private int mp; //Magic  points
+    private int ar; //Armor points
+    private int mp; //Magic points
 
     private String vis;
+    private boolean hasMagic;
     private boolean isVisable;
     private boolean isMonster;
 
@@ -19,7 +20,6 @@ public class Cell {
     }
 
     //user-defined
-    //hp, ap, mp
     public Cell(int h, int a, int m, String v){
         Random randyboi = new Random();
         this.hp = h+randyboi.nextInt(2)-1;
@@ -29,13 +29,12 @@ public class Cell {
         this.isVisable = true;
         this.isMonster = true;
     }
-
-    //I have the char to seperate this constructor from the one with magic
-    public Cell(int h, int a, int am, String v, char e){
+    
+    public Cell(int h, int a, int ar, String v, char e){
         Random randyboi = new Random();
         this.hp = h+randyboi.nextInt(2)-1;
         this.ap = a+randyboi.nextInt(2)-1;
-        this.am = am+randyboi.nextInt(2)-1;
+        this.mp = ar+randyboi.nextInt(2)-1;
         this.vis = v;
         this.isVisable = true;
         this.isMonster = true;
@@ -49,11 +48,15 @@ public class Cell {
     }
 
     public void hurt(int aAmount){
-        this.hp-= aAmount;
+        this.hp-= aAmount-this.ar;
     }
 
     public void attack(Cell foe){
-        foe.hurt(this.ap);
+        if (this.hasMagic){
+            if(Math.random() <= 0.25){
+                foe.hurt((int) Math.random()*3);
+            }
+        }
     }
 
     public boolean isVisisble(){
