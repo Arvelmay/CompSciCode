@@ -27,7 +27,7 @@ public class Game {
                 break;
                 case 1: grid[spot[0]][spot[1]] = new Goblin();
                 break;
-                case 2: grid[spot[0]][spot[1]] = new Cell("MT");
+                case 2: grid[spot[0]][spot[1]] = new MountainTroll();
                 break;
                 case 3: grid[spot[0]][spot[1]] = new Hobgoblin();
                 break;
