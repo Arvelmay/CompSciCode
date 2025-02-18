@@ -26,7 +26,7 @@ public class Cell {
         this.ap = a+randyboi.nextInt(2)-1;
         this.mp = m+randyboi.nextInt(2)-1;
         this.vis = v;
-        this.isVisable = true;
+        this.isVisable = false;
         this.isMonster = true;
     }
     
@@ -36,14 +36,14 @@ public class Cell {
         this.ap = a+randyboi.nextInt(2)-1;
         this.mp = ar+randyboi.nextInt(2)-1;
         this.vis = v;
-        this.isVisable = true;
+        this.isVisable = false;
         this.isMonster = true;
     }
 
     
     public Cell(String v){
         this.isMonster = false;
-        this.isVisable = true;
+        this.isVisable = false;
         this.vis = v;
     }
 

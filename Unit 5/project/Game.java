@@ -25,7 +25,7 @@ public class Game {
             switch(randomSpots[i]){
                 case 0: grid[spot[0]][spot[1]] = new CaveTroll();
                 break;
-                case 1: grid[spot[0]][spot[1]] = new Cell("GO");
+                case 1: grid[spot[0]][spot[1]] = new Goblin();
                 break;
                 case 2: grid[spot[0]][spot[1]] = new Cell("MT");
                 break;
