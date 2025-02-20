@@ -24,16 +24,16 @@ public class MyRand extends Random{
 
     public String[] subset(String[] s, int n){
         String[] outStrings = new String[n];
-        for(String i: outStrings){
-            i = s[super.nextInt(s.length)];
+        for(int i = 0; i<outStrings.length; i++){
+            outStrings[i] = s[super.nextInt(s.length)];
         }
         return outStrings;
     }
 
     public Object[] subset(Object[] o, int n){
         Object[] outObjects = new Object[n];
-        for(Object i: outObjects){
-            i = o[super.nextInt(o.length)];
+        for(int i = 0; i<outObjects.length; i++){
+            outObjects[i] = o[super.nextInt(o.length)];
         }
         return outObjects;
     }
@@ -48,7 +48,7 @@ public class MyRand extends Random{
         int out = 0;
         do { 
             out = super.nextInt(n+1);
-        } while (Math.floor((double) out) != Math.sqrt((double) out));
+        } while (Math.floor(Math.sqrt(out)) != Math.sqrt(out));
         return out;
     }
 }
