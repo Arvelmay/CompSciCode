@@ -2,10 +2,29 @@ import java.util.*;
 
 public class Game {
     public static void main(String[] args) {
+        //-1 = lose, 0 = playing, 1 = win
+        int win = 0;
         Cell[][] mainGrid= new Cell[10][10];
+        int[] plCell = new int[]{0,9};
+        int[] move = new int[2]; 
 
         fillGrid(mainGrid);
-        printGrid(mainGrid);
+        do {
+            printGrid(mainGrid);
+            move = mainGrid[plCell[0]][plCell[1]].move();
+            if(mainGrid[plCell[0]+move[0]][plCell[1]+move[1]].isMonster() == false){
+                mainGrid[plCell[0]+move[0]][plCell[1]+move[1]] = new Player(mainGrid[plCell[0]][plCell[1]].getHealth(), mainGrid[plCell[0]][plCell[1]].getAttack(), mainGrid[plCell[0]][plCell[1]].getMagic());
+                mainGrid[plCell[0]][plCell[1]] = new Cell();
+                mainGrid[plCell[0]][plCell[1]].setVisable(true);
+                plCell[] = [plCell[0]+move[0], plCell[1]+move[1]];
+            }
+        } while (win == 0);
+        if (win == -1){
+            System.out.println("YOU LOSE");
+        }
+        else if(win == 1){
+            System.out.println("YOU WIN");
+        }
     }
 
     public static void fillGrid(Cell[][] grid) {
@@ -27,12 +46,14 @@ public class Game {
                 break;
                 case 1: grid[spot[0]][spot[1]] = new Goblin();
                 break;
-                case 2: grid[spot[0]][spot[1]] = new Cell("MT");
+                case 2: grid[spot[0]][spot[1]] = new MountainTroll();
                 break;
                 case 3: grid[spot[0]][spot[1]] = new Hobgoblin();
                 break;
             }
         }
+
+        grid[0][9] = new Player();
 
         for (int r = 0; r < grid.length; r++){
             for (int c = 0; c < grid[r].length; c++){
