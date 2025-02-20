@@ -1,4 +1,3 @@
-
 import java.util.Random;
 
 public class MyRand extends Random{
@@ -7,7 +6,7 @@ public class MyRand extends Random{
     }
 
     public double nextDouble(int a, int b){
-        return super.nextDouble(b-a)+a;
+        return super.nextDouble()*(b-a)+a;
     }
 
     public int[] intList(int s, int a, int b){
